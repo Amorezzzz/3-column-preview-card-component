@@ -15,8 +15,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
+body{
+    background: var(--Very-light-gray);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-content: stretch;
+    height: 75%;
+    width: 75%;
+    border-radius: 2rem;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
