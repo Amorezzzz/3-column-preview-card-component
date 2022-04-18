@@ -15,12 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
     background: var(--Very-light-gray);
 }
+
 
 .wrapper{
     display: flex;
@@ -28,23 +29,116 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+    /* width: 50%; */
+    margin: 0 auto;
 }
+
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100%;
-    justify-content: stretch;
-    height: 75%;
-    width: 75%;
-    border-radius: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25%, auto));
+    grid-template-rows: minmax(100%, 100%);
+    /* justify-content: stretch; */
+    /* justify-content: center; */
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .block{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 40% 30%;
 }
+
+
+.first{
+    background-color: var(--Bright-orange);
+}
+
+.secound{
+    background: var(--Dark-cyan);
+}
+
+.third{
+    background: var(--Very-dark-cyan);
+}
+
+/**********************************************************************  upper sections  */
+
+.logo{
+    margin: 3em;
+}
+
+.sedan{
+    content: url(./images/icon-sedans.svg);
+}
+
+.suv{
+    content: url(./images/icon-suvs.svg);
+}
+
+.luxury{
+    content: url(./images/icon-luxury.svg);
+}
+
+.title{
+    font-family: var(--font-BigShoulders);
+    text-transform: uppercase;
+    color: var(--Transparent-white);
+    font-size: 2.5rem;
+    margin: 1.2em;
+}
+
+/* ******************* middle and lower sections */
+
+.content{
+    /* width: 75%; */
+    margin: 3em;
+    font-family: var(--font-lexend);
+    color: var(--Transparent-white);
+    /* word-spacing: 10px; */
+    /* line-height: 1.5em; */
+}
+
+
+button{
+    /* width: 60%; */
+    /* height: 50%; */
+    border-radius: 2em;
+    font-family: var(--font-lexend);
+    font-size: 15px;
+    padding: 1em 2em;
+    margin:3em;
+    font-weight: 700;
+    background-color: var(--Transparent-white);
+    text-transform: capitalize;
+    cursor:pointer;
+    border: none;
+}
+
+
+button:hover{
+    background-color: transparent ;
+    color: var(--Transparent-white);
+    outline: 2px solid var(--Transparent-white);
+}
+
+.one{
+    color: var(--Bright-orange);
+}
+
+.two{
+    color: var(--Dark-cyan);
+}
+
+.three{
+    color: var(--Very-dark-cyan);
+}
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }

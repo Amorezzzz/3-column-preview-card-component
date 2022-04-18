@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* justify-content: stretch; */
+    /* justify-content: center; */
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.secound{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.third{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
